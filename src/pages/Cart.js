@@ -4,7 +4,7 @@ import { AppContainer } from '../Global';
 const Cart = () => {
     return (
         <AppContainer>
-            <h1>Cart Page</h1>
+            <h1>This is Cart Page</h1>
         </AppContainer>
     );
 };
