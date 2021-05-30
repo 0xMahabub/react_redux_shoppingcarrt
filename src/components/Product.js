@@ -37,18 +37,5 @@ const Product = ({ product, addToCart }) => {
 };
 
 
-// const mapStateToProps = state => {
-//     return {
-//         cart: state.cart,
-//     }
-// }
-
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         addProduct: addToCart,
-//     }
-// }
-
-
 
 export default connect(null, { addToCart })(Product);

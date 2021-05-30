@@ -4,7 +4,7 @@ const REMOVE_FROM_CART = 'REMOVE_FROM_CART'
 
 export const cartReducer = (
     state = {
-        cart: JSON.parse(localStorage.getItem("cart") || "[]")
+        cart: JSON.parse(localStorage.getItem("cart") || "[]"),
     },
     action
 ) => {
@@ -18,7 +18,7 @@ export const cartReducer = (
         case REMOVE_FROM_CART:
             return {
                 ...state,
-                cart: [...state.cart, action.payload]
+                cart: [...action.payload]
             }
 
         default: return state

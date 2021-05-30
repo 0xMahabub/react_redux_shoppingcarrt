@@ -8,11 +8,12 @@ import {
 import Header from './components/Header/Header';
 import Index from './pages/Index';
 import Cart from './pages/Cart';
+import { AppContainer } from './Global';
 
 const AppRouter = () => {
     return (
         <Router>
-           <Header/>
+            <Header/>
         <Switch>
             <Route exact path="/">
                 <Index/>
@@ -20,11 +21,19 @@ const AppRouter = () => {
             <Route path="/cart">
                 <Cart />
             </Route>
-            <Route path="/checkout">
-                <h1>checkout.........</h1>
-            </Route>
             <Route path="/*">
-               <h1>Not found</h1> 
+                <AppContainer>
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        minHeight: '80vh',
+                        flexDirection: 'column'
+                    }}>
+                        <h1>Error 404!</h1>
+                        <p>Sorry, page not found.</p>
+                    </div>
+                </AppContainer>
             </Route>
         </Switch>
         </Router>

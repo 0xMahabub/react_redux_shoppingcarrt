@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HeaderWrap } from './styled';
 import { AppContainer } from '../../Global';
-import { FiShoppingCart, FiShoppingBag } from 'react-icons/fi';
+import { FiShoppingCart } from 'react-icons/fi';
 import { connect } from 'react-redux';
 
 const Header = ({ cart }) => {
@@ -19,7 +19,6 @@ const Header = ({ cart }) => {
                 <ul className="menu_area">
                     <li> <Link to='/'>Home</Link> </li>
                     <li> <Link to='/cart'>Cart <FiShoppingCart /> ({ cart.length })</Link> </li>
-                    <li> <Link to='/checkout'>Checkout <FiShoppingBag /></Link></li>   
                 </ul>
             </AppContainer>
         </HeaderWrap>
