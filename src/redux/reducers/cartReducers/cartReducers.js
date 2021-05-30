@@ -5,7 +5,7 @@ const initialState = {
         cart : []
 }
 
-export const cartReducers = (action , state = initialState) =>{
+export const cartReducers = (state = initialState, action) =>{
     switch(action.type){
         case  ADD_PRODUCT :
             const newId = action.id;

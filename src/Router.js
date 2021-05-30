@@ -9,12 +9,13 @@ import Header from './components/Header/Header';
 import Index from './pages/Index';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import Notfound from './pages/404';
 
 
 const AppRouter = () => {
     return (
         <Router>
-           <Header/>
+            <Header/>
         <Switch>
             <Route exact path="/">
                 <Index/>
@@ -26,7 +27,7 @@ const AppRouter = () => {
                 <Checkout />
             </Route>
             <Route path="/*">
-               <h1>Not found</h1> 
+                <Notfound />
             </Route>
         </Switch>
         </Router>
