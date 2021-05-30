@@ -5,21 +5,20 @@ const initialState = {
         cart : []
 }
 
-export const cartReducers = (action , state = initialState) =>{
+export const cartReducers = (state = initialState, action) => {
     switch(action.type){
         case  ADD_PRODUCT :
             const newId = action.id;
             const newCart = [...state.cart, newId]
-                return { cart : newCart};
+            return { cart : newCart};
 
-                case  REMOVE_PRODUCT :
+        case  REMOVE_PRODUCT :
             const id = action.id;
             const balanceCart = state.cart.filter(item => item.id !== id)
-                return { cart : newCart}
+            return { cart : newCart}
 
 
-        default :
-        return  state
+        default : return  state
     }
         
 }
