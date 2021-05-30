@@ -14,11 +14,11 @@ const ProductList = () => {
 
     return (
         <div className="container">
-            <div className="">
+            <div className="side_bar">
 
             </div>
 
-            <div className="">
+            <div className="product_area">
              {
                 products.map(product =><Product product={product} key={product.id}></Product>)
              }
