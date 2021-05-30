@@ -35,4 +35,30 @@ export const HeaderWrap = styled.header`
             gap: .3rem;
         }
     }
+
+    /* RESPONSIVE */
+
+    @media only screen and (max-width: 767.9px) {
+        .menu_area {
+            a {
+                span {
+                    display: none;
+                }
+            }
+        }
+
+        .logo_area {
+                max-width: 100px;
+                span {
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #011A3E;
+
+                    .logo_dot {
+                        color: #21C87A;
+                    }
+                }
+            }
+    }
 `;

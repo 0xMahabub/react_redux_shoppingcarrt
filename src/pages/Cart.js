@@ -11,7 +11,7 @@ const Cart = ({ cart, removeFromCart }) => {
     return (
         <AppContainer>
             <CartPage>
-                <h1 style={{textAlign: 'right'}}>Cart Page | Total items: {cart.cart?.length}</h1>
+                <h1 style={{textAlign: 'right'}}>Total items: {cart.cart?.length}</h1>
                 {
                     cart.cart?.length < 1 && <p style={{ textAlign: 'center' }}>Your cart is empty!</p>
                 }

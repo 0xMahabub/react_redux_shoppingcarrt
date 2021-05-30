@@ -32,6 +32,21 @@ export const AppContainer = styled.div`
         border-radius: .25rem;
         text-transform: capitalize;
     }
+
+    /* RESPONSIVE */
+    @media only screen and (max-width: 991.9px) {
+        .product_area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media only screen and (max-width: 767.9px) {
+        .product_area {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        width: 96%;
+    }
 `;
 
 
@@ -73,7 +88,7 @@ export const CartItem = styled.div`
     display: flex;
     gap: 1rem;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
     max-height: 250px;
     background-color: #f8faff;
     padding: 1rem;
@@ -107,6 +122,16 @@ export const CartItem = styled.div`
             color: white;
             background-color: red;
             font-size: 1rem;
+        }
+    }
+
+    /* RESPONSIVE */
+    @media only screen and (max-width: 767.9px) {
+        max-height: inherit;
+
+        div {
+            gap: .85rem;
+            flex-direction: column;
         }
     }
 `;
