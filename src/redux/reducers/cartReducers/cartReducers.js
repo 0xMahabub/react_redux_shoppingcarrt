@@ -10,13 +10,13 @@ export const cartReducers = (state = initialState, action) => {
         case  ADD_PRODUCT :
             const newId = action.id;
             const newCart = [...state.cart, newId]
-            
+
             return { cart : newCart};
 
         case  REMOVE_PRODUCT :
             const id = action.id;
             const balanceCart = state.cart.filter(item => item.id !== id)
-            return { cart : newCart}
+            return { cart : balanceCart}
 
 
         default : return  state
