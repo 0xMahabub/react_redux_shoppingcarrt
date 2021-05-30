@@ -1,11 +1,11 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 
 const Product = (props) => {
     const {id, name, image, price} = props.product;
     return (
         <Card>
-            <Card.Img variant="top" src={image}/>
+            <Card.Img variant="top" style={{maxWidth:'200px'}} src={image}/>
             <Card.Body>
             <Card.Title>{name}</Card.Title>
             </Card.Body>
