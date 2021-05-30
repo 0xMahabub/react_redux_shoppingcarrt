@@ -3,12 +3,128 @@
         {
             "id": 101,
             "name": "Onion",
-            "price" : 99.99
+            "price" : 9.99,
+            "image" : "https://i.ibb.co/1Jzsyw7/onions-path-isolated.jpg",
+            "specs" : {
+                "weight" : "1Kg"
+            }
         },
         {
             "id": 102,
-            "name": "garlic",
-            "price" : 97.99
+            "name": "Potato",
+            "price" : 8.99,
+            "image" : "https://i.ibb.co/fxfXgtk/potato-4.jpg",
+            "specs" : {
+                "weight" : "10Kg"
+            }
+        },
+        {
+            "id": 103,
+            "name": "Tomato",
+            "price" : 12.99,
+            "image" : "https://i.ibb.co/WtQypnk/Tomato-with-slice-isolated-With-clipping-path.jpg",
+            "specs" : {
+                "weight" : "4Kg"
+            }
+        },
+        {
+            "id": 104,
+            "name": "Carrot",
+            "price" : 14.99,
+            "image" : "https://i.ibb.co/pZpdH6z/carrots-isolated.jpg",
+            "specs" : {
+                "weight" : "3Kg"
+            }
+        },
+        {
+            "id": 105,
+            "name": "Garlic",
+            "price" : 19.99,
+            "image" : "https://i.ibb.co/SxZQ4zD/Garlic-on-white.jpg",
+            "specs" : {
+                "weight" : "3Kg"
+            }
+        },
+        {
+            "id": 106,
+            "name": "Aubergine",
+            "price" : 17.99,
+            "image" : "https://i.ibb.co/jg5jSZQ/Eggplant-isolated-on-white.jpg",
+            "specs" : {
+                "weight" : "4Kg"
+            }
+        },
+        {
+            "id": 107,
+            "name": "Lettuce",
+            "price" : 11.99,
+            "image" : "https://i.ibb.co/jZLTNZC/Lettuce-isolated-on-white-background.jpg",
+            "specs" : {
+                "weight" : "500gm"
+            }
+        },
+        {
+            "id": 108,
+            "name": "Pumpkin",
+            "price" : 15.99,
+            "image" : "https://i.ibb.co/yVDNTZ3/Round-pumpkin-slice-isolated-on-white-background.jpg",
+            "specs" : {
+                "weight" : "5Kg"
+            }
+        },
+        {
+            "id": 109,
+            "name": "Cabbage",
+            "price" : 9.99,
+            "image" : "https://i.ibb.co/FWGX0Gm/More-Photos-like-this-here.jpg",
+            "specs" : {
+                "weight" : "2Kg"
+            }
+        },
+        {
+            "id": 110,
+            "name": "Raddish",
+            "price" : 11.99,
+            "image" : "https://i.ibb.co/Wgt1Sz6/daikon-radishes-isolated-on-white-background.jpg",
+            "specs" : {
+                "weight" : "3Kg"
+            }
+        },
+        {
+            "id": 111,
+            "name": "Dal",
+            "price" : 17.99,
+            "image" : "https://i.ibb.co/SsZzy1s/lentils.jpg",
+            "specs" : {
+                "weight" : "4Kg"
+            }
+        },
+        {
+            "id": 112,
+            "name": "Spinach",
+            "price" : 10.99,
+            "image" : "https://i.ibb.co/ysJXK6k/Spinach-on-a-white-background.jpg",
+            "specs" : {
+                "weight" : "500gm"
+            }
+        },
+        {
+            "id": 113,
+            "name": "Calabash",
+            "price" : 9.99,
+            "image" : "https://i.ibb.co/GJ50ZWG/Calabash-Bottle-Gourd-isolated-on-white-background.jpg",
+            "specs" : {
+                "weight" : "3Kg"
+            } 
+        },
+        {
+            "id": 114,
+            "name": "Combo",
+            "price" : 9.99,
+            "image" : "https://i.ibb.co/Y8fb9KR/Box-full-of-fresh-vegetables.jpg",
+            "specs" : {
+                "weight" : "3Kg"
+            }
         }
     ]
 }
