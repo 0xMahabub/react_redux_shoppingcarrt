@@ -1,11 +1,12 @@
 import React from 'react';
 import ProductList from './ProductList';
+import { AppContainer } from '../Global';
 
 const Index = () => {
     return (
-        <div>
+        <AppContainer>
             <ProductList/>
-        </div>
+        </AppContainer>
     );
 };
 
