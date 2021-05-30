@@ -24,12 +24,15 @@ export const HeaderWrap = styled.header`
     .menu_area {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 1rem 1.5rem;
         list-style: none;
 
         a {
+            display: inline-flex;
+            align-items: center;
             text-decoration: none;
             color: #1C1A1F;
+            gap: .3rem;
         }
     }
 `;

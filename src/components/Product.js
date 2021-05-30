@@ -1,11 +1,14 @@
-import { specialChars } from '@testing-library/user-event';
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { AppContainer, ProductItem } from '../Global';
+import { connect } from 'react-redux';
+import { addToCart } from '../redux/actions/cart';
 
+const Product = ({ product, addToCart }) => {
+    const {name, image, price, specs} = product;
 
-const Product = (props) => {
-    const {name, image, price, specs} = props.product;
+    // console.log("_cart_", cart);
+
     return (
         <AppContainer>
             <ProductItem>
@@ -16,8 +19,12 @@ const Product = (props) => {
                             <Card.Title>{name} <small>{specs.weight}</small></Card.Title>
                         </Card.Body>
                         <Card.Footer className="pd_info">
-                            <h4>{price}</h4>
-                            <button type="button" className="btn-add">
+                            <h4>{`$` + price}</h4>
+                            <button 
+                                onClick={() => addToCart(product)}
+                                type="button" 
+                                className="btn-add"
+                            >
                                 add to cart
                             </button>
                         </Card.Footer>
@@ -29,4 +36,19 @@ const Product = (props) => {
     );
 };
 
-export default Product;
+
+// const mapStateToProps = state => {
+//     return {
+//         cart: state.cart,
+//     }
+// }
+
+// const mapDispatchToProps = dispatch => {
+//     return {
+//         addProduct: addToCart,
+//     }
+// }
+
+
+
+export default connect(null, { addToCart })(Product);
