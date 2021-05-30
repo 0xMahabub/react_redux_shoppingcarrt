@@ -11,7 +11,6 @@ const ProductList = () => {
     useEffect(() => {
         setProducts([...fakeData.products])
         // console.log(fakeData.products)
-     
     }, [])
 
     return (
@@ -23,7 +22,7 @@ const ProductList = () => {
 
                 <div className="product_area">
                 {
-                    products.map(product =><Product product={product} key={product.id}></Product>)
+                    products.map(product => <Product product={product} key={product.id}></Product>)
                 }
 
                 </div>

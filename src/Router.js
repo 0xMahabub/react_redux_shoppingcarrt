@@ -2,15 +2,12 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+    Route
+} from "react-router-dom";
 import Header from './components/Header/Header';
 import Index from './pages/Index';
 import Cart from './pages/Cart';
-import Checkout from './pages/Checkout';
-import Notfound from './pages/404';
-
+import { AppContainer } from './Global';
 
 const AppRouter = () => {
     return (
@@ -22,12 +19,21 @@ const AppRouter = () => {
             </Route>
             <Route path="/cart">
                 <Cart />
-            </Route>
-            <Route path="/checkout">
-                <Checkout />
+
             </Route>
             <Route path="/*">
-                <Notfound />
+                <AppContainer>
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        minHeight: '80vh',
+                        flexDirection: 'column'
+                    }}>
+                        <h1>Error 404!</h1>
+                        <p>Sorry, page not found.</p>
+                    </div>
+                </AppContainer>
             </Route>
         </Switch>
         </Router>

@@ -2,8 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HeaderWrap } from './styled';
 import { AppContainer } from '../../Global';
+import { FiShoppingCart } from 'react-icons/fi';
+import { connect } from 'react-redux';
 
-const Header = () => {
+const Header = ({ cart }) => {
+
+    // console.log("cart_", cart);
+
     return (
         <HeaderWrap>
             <AppContainer header>
@@ -13,12 +18,17 @@ const Header = () => {
 
                 <ul className="menu_area">
                     <li> <Link to='/'>Home</Link> </li>
-                    <li> <Link to='/cart'>Cart</Link> </li>
-                    <li> <Link to='/checkout'>Checkout</Link></li>   
+                    <li> <Link to='/cart'>Cart <FiShoppingCart /> ({ cart.length })</Link> </li>
                 </ul>
             </AppContainer>
         </HeaderWrap>
     );
 };
 
-export default Header;
+const mapStateToProps = state => {
+    return {
+        cart: state.cart.cart,
+    }
+}
+
+export default connect(mapStateToProps, null)(Header);
