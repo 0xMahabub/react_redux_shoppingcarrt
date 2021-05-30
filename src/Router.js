@@ -7,6 +7,9 @@ import {
   } from "react-router-dom";
 import Header from './components/Header/Header';
 import Index from './pages/Index';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+
 
 const AppRouter = () => {
     return (
@@ -17,10 +20,10 @@ const AppRouter = () => {
                 <Index/>
             </Route>
             <Route path="/cart">
-                <h1>cart.....</h1>
+                <Cart />
             </Route>
             <Route path="/checkout">
-                <h1>checkout.........</h1>
+                <Checkout />
             </Route>
             <Route path="/*">
                <h1>Not found</h1> 
