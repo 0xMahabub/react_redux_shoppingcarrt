@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import fakeData from "../data.json"
 import Product from './Product';
+import { AppContainer } from '../Global';
+
 
 const ProductList = () => {
 
@@ -13,19 +15,21 @@ const ProductList = () => {
     }, [])
 
     return (
-        <div className="container">
-            <div className="side_bar">
+        <AppContainer>
+            <div className="container">
+                <div className="side_bar">
+
+                </div>
+
+                <div className="product_area">
+                {
+                    products.map(product =><Product product={product} key={product.id}></Product>)
+                }
+
+                </div>
 
             </div>
-
-            <div className="product_area">
-             {
-                products.map(product =><Product product={product} key={product.id}></Product>)
-             }
-
-            </div>
-           
-        </div>
+        </AppContainer>
     );
 };
 
