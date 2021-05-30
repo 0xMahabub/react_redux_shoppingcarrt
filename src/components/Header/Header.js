@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div>
             <div className="logo_area">
-
+                <span>greengrocy</span>
             </div>
             <div className="menu_area">
                 <ul>
