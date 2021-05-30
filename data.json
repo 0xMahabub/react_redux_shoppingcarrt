@@ -4,6 +4,11 @@
             "id": 101,
             "name": "Onion",
             "price" : 99.99
+        },
+        {
+            "id": 102,
+            "name": "garlic",
+            "price" : 97.99
         }
     ]
 }
