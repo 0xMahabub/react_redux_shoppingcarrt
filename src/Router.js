@@ -7,6 +7,7 @@ import {
   } from "react-router-dom";
 import Header from './components/Header/Header';
 import Index from './pages/Index';
+import Cart from './pages/Cart';
 
 const AppRouter = () => {
     return (
@@ -17,7 +18,7 @@ const AppRouter = () => {
                 <Index/>
             </Route>
             <Route path="/cart">
-                <h1>cart.....</h1>
+                <Cart />
             </Route>
             <Route path="/checkout">
                 <h1>checkout.........</h1>
