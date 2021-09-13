@@ -10,6 +10,8 @@ const Cart = ({ cart, removeFromCart }) => {
 
     return (
         <AppContainer>
+            <h1>This is Cart Page</h1>
+
             <CartPage>
                 <h1 style={{textAlign: 'right'}}>Total items: {cart.cart?.length}</h1>
                 {
