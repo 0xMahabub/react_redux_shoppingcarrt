@@ -24,12 +24,41 @@ export const HeaderWrap = styled.header`
     .menu_area {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 1rem 1.5rem;
         list-style: none;
 
         a {
+            display: inline-flex;
+            align-items: center;
             text-decoration: none;
             color: #1C1A1F;
+            gap: .3rem;
         }
+    }
+
+    /* RESPONSIVE */
+
+    @media only screen and (max-width: 767.9px) {
+        .menu_area {
+            a {
+                span {
+                    display: none;
+                }
+            }
+        }
+
+        .logo_area {
+                max-width: 100px;
+                span {
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #011A3E;
+
+                    .logo_dot {
+                        color: #21C87A;
+                    }
+                }
+            }
     }
 `;
